@@ -1,0 +1,3 @@
+#!/bin/ksh
+
+# Write a script that monitors a directory for changes and sends an email notification when a new file is added.
