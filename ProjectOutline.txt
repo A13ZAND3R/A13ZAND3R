@@ -1,6 +1,0 @@
-This project will moniter a directory for changes and send an email when a cange is made. 
-
-1. set up variables
-2. set up environment
-3. set up email 
-4. set up scanner
