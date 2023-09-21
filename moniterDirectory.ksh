@@ -16,11 +16,15 @@
 # ----- Check WatchedDireetory exist or create it
 if [[ ! -e ${watchDir} ]] ;
 then
+  echo "Directory Not Found.... Creating: $emailFile"
   mkdir $watchDir
   touch $emailFile
+  chmod 775 $emailFile
   echo "This is the email body" >> $emailFile
 fi
 
 # ----- Set Email Body
-read -r emailBody < $emailDir
+read -r emailBody < $emailFile
+echo $emailBody
 
+# ----- Set up 
