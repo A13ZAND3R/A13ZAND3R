@@ -86,6 +86,7 @@ class LTGUI:
         self.textbox2.insert(tk.END, inputMessage)
 
     def shortcut(self, event):
+        # If the below mapping does not work uncomment to find out the state of CTRL+"Return"
         #print(event.keysym)
         #print(event.state)
         if event.state == 4 and event.keysym == "Return":
